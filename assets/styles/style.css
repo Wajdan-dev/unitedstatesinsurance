@@ -271,6 +271,9 @@ body {
     .header-wrapper  .form-wrapper h2 {
         font-size: 16px;
     }
-   
+    .header-wrapper .form-wrapper form {
+        width: calc(100% - 50px);
+        max-width: 350px;
+    }
 
 }
