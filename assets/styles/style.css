@@ -1,0 +1,276 @@
+body {
+    font-family: 'Baloo Tamma 2', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header-wrapper {
+    background-image: url('../images/header_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+.header-wrapper .top-menu {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    max-width: 100%;
+    height: auto;
+}
+
+.header-wrapper .call-text {
+    font-size: 20px;
+    font-weight: 400;
+    vertical-align: middle;
+}
+.header-wrapper .call-text .phone-number {
+    font-size: 28px;
+    font-weight: 800;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-wrapper .call-agent {
+    border-radius: 4px;
+    border: none;
+    background: #2f9ee9;
+    padding: 7px 7px 4px 7px;
+    color: #ffffff;
+    display: none;
+    text-decoration: none;
+}
+
+.clearfix::after {
+    display: none !important;
+    clear: both;
+    content: none !important;
+}
+
+
+.header-wrapper  .form-wrapper {
+    padding: 30px 30px 275px 30px;
+    text-align: center;
+}
+
+.header-wrapper  .form-wrapper h1 {
+    font-size: 52px;
+    color: #153f69;
+    margin: 15px 0 5px 0;
+    font-weight: 700;
+    line-height: 57px;
+}
+
+.header-wrapper   .form-wrapper h2 {
+    font-size: 30px;
+    color: #2f9ee9;
+}
+
+
+.header-wrapper  .form-container {
+    max-width: 510px;
+    margin: 10px auto auto auto;
+}
+
+
+@keyframes smooth-bounce-left {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-30px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .header-wrapper .form-container .start-saving {
+      display: inline-block;
+      max-width: 150px;
+      color: #153f69;
+      line-height: 55px;
+      font-weight: 700;
+      font-size: 20px;
+  }
+  
+  .bounce-left {
+      animation: smooth-bounce-left 2s ease-in-out infinite;
+  }
+  
+.float-left {
+    float: left!important;
+}
+
+
+.header-wrapper   .form-wrapper form {
+    width: 350px;
+    border: solid 2px #f6865a;
+    border-radius: 4px;
+    background: #f6865a;
+    float: right;
+    position: relative;
+}
+
+.header-wrapper   .form-wrapper form input[type='tel'] {
+    padding: 15px 15px 6px 15px;
+    border: none;
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: calc(100% - 101px);
+    border-radius: 4px 0 0 4px;
+    float: left;
+    height: 56px;
+}
+
+.header-wrapper   .form-wrapper form .submit-btn {
+    padding: 10px 20px 15px 18px;
+    background: #f6865a;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 25px;
+    vertical-align: middle;
+    max-width: 101px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-decoration: none;
+}
+
+.main-content {
+    padding: 20px 0;
+}
+
+.main-content .providers {
+    padding: 15px 0;
+}
+
+.main-content .providers img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.main-content .how-it-works {
+    margin: 0;
+    padding: 25px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+     
+}
+.main-content .how-it-works li {
+    display: flex;
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.main-content .how-it-works li .circle {
+    background: #2f9ee9;
+    text-align: center;
+    vertical-align: middle;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    margin-right: 7px;
+    line-height: 42px;
+}
+
+.footer-links {
+    padding: 25px 0;
+    text-align: center;
+    color: #a9a8a8;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-links a {
+    color: #a9a8a8;
+    text-decoration: none;
+
+}
+.footer-desc {
+    padding: 15px 0 5px 0;
+    color: #c6c5c5;
+    font-size: 13px;
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+}
+@media(max-width: 767px) {
+    .header-wrapper .call-agent {
+        display: inline-block;
+    }
+    .header-wrapper .call-text {
+        display: none;
+    }
+    .header-wrapper  .form-wrapper {
+        padding: 15px 15px 420px 15px;
+    }
+    .header-wrapper  .form-wrapper h1 {
+        margin-top: 0;
+    }
+    .header-wrapper  .form-wrapper h2 {
+        font-size: 18px;
+    }
+    .header-wrapper  .form-container .start-saving {
+        display: none;
+    }
+    .main-content .how-it-works {
+        margin: 0;
+        padding: 25px 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+         
+    }
+      .logo {
+        max-width: 200px;
+    }
+    .main-content .how-it-works li {
+        display: flex;
+        margin-right: 15px;
+        font-size: 19px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .header-wrapper   .form-wrapper form input[type='tel'] {
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    .header-wrapper  .form-wrapper {
+        padding-bottom: 300px;
+    }
+}
+
+
+
+@media only screen and (max-width: 450px) {
+    .header-wrapper  .form-wrapper {
+        padding-bottom: 230px;
+    }
+    .header-wrapper  .form-wrapper h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .header-wrapper  .form-wrapper h2 {
+        font-size: 16px;
+    }
+   
+
+}
