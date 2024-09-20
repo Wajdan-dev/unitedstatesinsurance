@@ -249,6 +249,11 @@ body {
     .header-wrapper   .form-wrapper form input[type='tel'] {
         font-size: 18px;
     }
+    .header-wrapper {
+        background-position: bottom right;
+        background-size: 100%;
+        background-image: url('../images/header_bg_mobile.jpg');
+    }
 
 }
 
